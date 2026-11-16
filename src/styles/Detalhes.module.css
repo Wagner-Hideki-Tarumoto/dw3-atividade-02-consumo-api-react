@@ -1,0 +1,119 @@
+.pagina {
+  min-height: 100vh;
+  padding: 40px 20px;
+}
+
+.botaoContainer {
+  margin-bottom: 25px;
+  display: block;
+  width: 100%;
+}
+
+.botaoVoltar {
+  display: inline-block;
+  margin-bottom: 30px;
+  padding: 12px 24px;
+  background: rgba(79, 195, 247, 0.15);
+  color: #90caf9;
+  border-radius: 8px;
+  text-decoration: none;
+  border: 1px solid rgba(79, 195, 247, 0.3);
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+.botaoVoltar:hover {
+  background: #03a9f4;
+}
+
+.cartaoPrincipal {
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 20px;
+  padding: 30px;
+  border: 1px solid rgba(79, 195, 247, 0.1);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(8px);
+  max-width: 700px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.capaWrapper {
+  flex-shrink: 0;
+  text-align: center;
+}
+
+.capa {
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
+  filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.3));
+}
+
+.conteudo {
+  flex: 1;
+  min-width: 280px;
+  color: #e3f2fd;
+  width: 100%;
+}
+
+.nomeJogo {
+  font-size: 2.2rem;
+  margin: 0 0 25px;
+  text-transform: capitalize;
+  color: #fff;
+}
+
+.infoLinha {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  font-size: 1.05rem;
+}
+
+.rotulo {
+  color: #90caf9;
+}
+
+.estatisticas {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-top: 15px;
+}
+
+.linhaStat {
+  display: flex;
+  justify-content: space-between;
+  padding: 6px 0;
+  font-size: 1rem;
+}
+
+.nomeStat {
+  color: #90caf9;
+  text-transform: capitalize;
+}
+
+.valorStat {
+  font-weight: 600;
+  color: #fff;
+  font-size: 1rem;
+}
+
+@media (max-width: 600px) {
+  .cartaoPrincipal {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .nomeJogo {
+    text-align: center;
+  }
+}

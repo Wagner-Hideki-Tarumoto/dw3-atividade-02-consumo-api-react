@@ -1,0 +1,112 @@
+/* Importando fontes do Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap");
+
+/* Variáveis de cor */
+:root {
+  --bg-color: #010101;
+  --bg-alpha: #01010166;
+  --primary-color: #2383f2;
+  --primary-alpha: #2383f249;
+  --primary-hover: #0a54a9;
+  --secondary-color: #fff;
+  --third-color: #060606;
+  --fourth-color: #121212;
+  --fourth-color-alpha: #12121280;
+  --label-color: #777;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+::placeholder {
+  font-family: "Poppins";
+  color: var(--label-color);
+}
+
+body {
+  font-family: "Poppins", "Ubuntu", sans-serif;
+  color: #e3f2fd;
+  min-height: 100vh;
+  background: url('/images/bg.png') no-repeat center center fixed;
+  background-size: cover;
+  position: relative;
+}
+
+/* Camada escura para o texto aparecer bem */
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(10, 25, 41, 0.7);
+  z-index: -1;
+}
+
+main {
+  flex: 1; 
+}
+
+.title {
+  font-family: "Poppins";
+  color: var(--secondary-color);
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+/* Formulário */
+input {
+  padding: 0.8rem;
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
+  border-radius: 0.3rem;
+}
+
+.formPrimary {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.inputPrimary {
+  font-family: "Poppins";
+  color: var(--fourth-color);
+  width: 100%;
+  border: none;
+}
+
+.inputPrimary:focus {
+  outline: 0.15rem solid var(--primary-color);
+}
+
+.btnPrimary {
+  font-family: "Poppins";
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  height: 3rem;
+  width: 100%;
+  border: none;
+  cursor: pointer;
+}
+
+.btnPrimary:hover {
+  background-color: var(--primary-hover);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .title {
+    font-size: 0.8rem;
+  }
+}
